@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{  
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(2, 14, 19);
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+        .box,.box2,.box3,.box3,.box4,.box5{  
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+             border-radius: 50%;
+             box-shadow: 2px 5px 50px rgb(218, 184, 33);
+             animation: hars 4s infinite;
+             animation-timing-function: linear;
+        }
+        .box2{   
+            animation-delay: 1s;
+            background-color: blue;
+            margin-left: 10PX;
+        }
+        .box3{   
+            animation-delay: 2s;
+            background-color: rgba(10, 107, 18, 0.651);
+            margin-left: 10px;
+        }
+        .box4{   
+            animation-delay: 3s;
+            background-color: rgb(85, 28, 112);
+             margin-left: 10px;
+            
+        }
+        .box5{   
+            animation-delay: 5s;
+            background-color: rgb(255, 0, 34);
+             margin-left: 10px;
+        }
+       @keyframes hars{
+        0%{ 
+            transform: translateY(0);
+        }
+        50%{  
+            transform: translateY(-300px);
+        }
+        100%{  
+            transform:translateY(0PX) ;
+        }
+
+
+       }
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+
+    
+</body>
+</html>
